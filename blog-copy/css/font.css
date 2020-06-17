@@ -1,0 +1,33 @@
+@font-face{
+    font-family:dancing;
+    src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf')
+
+}
+@font-face{
+    font-family:lemonada;
+    src: url('../fonts/Lemonada/Lemonada-VariableFont_wght.ttf')
+
+}
+@font-face{
+    font-family:piedra;
+    src: url('../fonts/Piedra/Piedra-Regular.ttf')
+}
+ @font-face{
+        font-family:zilla;
+        src: url('../fonts/Zilla_Slab/ZillaSlab-Regular.ttf')
+
+}
+@font-face{
+    font-family:concert;
+    src: url('../fonts/Concert_One/ConcertOne-Regular.ttf')
+
+}
+@font-face{
+    font-family:francois;
+    src: url('../fonts/Francois_One/FrancoisOne-Regular.ttf')
+
+}
+@font-face{
+    font-family:handlee;
+    src: url('../fonts/Handlee/Handlee-Regular.ttf')
+}

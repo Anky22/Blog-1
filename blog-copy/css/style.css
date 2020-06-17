@@ -1,0 +1,731 @@
+@import url(../css/font.css);
+
+
+/* ---------------------global-----------------------*/
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --ab:#FEEAFA;
+    --aa:black;
+    --dance:'dancing',cursive;
+    --lemon:'lemonada',cursive;
+    --pie:'piedra',cursive;
+    --zilla:'zilla',cursive;
+    --concert:'concert',cursive;
+    --francois:'francois',cursive;
+    --handlee:'handlee',cursive;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9rem;
+    color: black;
+   
+}
+a{
+    text-decoration: none;
+    color:rgb(248, 218, 218);
+    position: relative;
+ 	display:inline-block;
+ 	text-transform: uppercase;
+ 	font-size: 1rem;
+ 	overflow:hidden;
+ 	transition:0.2s;
+}
+span{
+    font-family: dancing;
+}
+.flex-row
+{
+    display: flex;
+    direction:row;
+    flex-wrap:wrap;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--concert);
+    font-size: 5rem;
+}
+h4{
+    font-family: dancing;
+    font-size: 1.5rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor:pointer;
+    font-family: var(--francois);
+}
+.container{
+    margin:0 5vw;
+}
+
+
+/*--------------------------------navigation------------------------*/
+.classn .nav-menu
+{
+    justify-content:space-between;
+}
+.classn .nav-items
+{
+    display:flex;
+    
+}
+.classn .social
+{
+    padding: .8rem .2rem;
+}
+.classn .social i{
+    padding: 1.6rem .5rem;
+}
+.classn .nav-items .nav-link
+{
+    padding:1rem 1rem;
+    font-size: 1.2rem;
+    position:relative;
+    font-family:var(--zilla); 
+}
+
+.classn{
+    background:var(--aa);
+    padding:0 2rem;
+    height:0rem;
+    min-height:10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.classn .nav-brand a
+{
+ font-size: 1.6rem;
+ padding: 1rem 0;
+display:block;
+font-family: var(--zilla);
+}
+
+
+.class .social i:hover{
+    color:whitesmoke;
+    transition-delay: 0s;
+}
+
+.classn .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.classn .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.classn .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color:var(--ab);
+}
+.collapse{
+    height: 30rem;
+}
+
+
+
+@media only screen and (max-width:737px){
+    .classn .nav-menu, .nav-items{
+        flex-direction: column;
+    }
+    .classn .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+
+ 
+  a:hover
+ {
+ 	color: var(--aa);
+ 	background:var(--ab);
+     box-shadow: 0 0 10px var(--ab), 0 0 40px var(--ab), 0 0 80px var(--ab);
+     transition-delay: 1s;
+ 	
+
+ }
+ a span
+ {
+ 	position: absolute;
+ 	display:block;
+
+ }
+  a span:nth-child(1)
+ {
+ 	top: 0;
+ 	left: -100%;
+ 	width:100%;
+ 	height:2px;
+ 	background:linear-gradient(90deg,transparent,var(--ab));
+ }
+  a:hover span:nth-child(1)
+ { 
+ 	left:100%;
+ 	transition: 1s;
+
+ }
+  a span:nth-child(3)
+ {
+ 	bottom:  0;
+ 	right: -100%;
+ 	width:100%;
+ 	height:2px;
+ 	background:linear-gradient(270deg,transparent,var(--ab));
+ }
+  a:hover span:nth-child(3)
+ { 
+ 	right:100%;
+ 	transition: 1s;
+ 	transition-delay: 0.2s;
+
+ }
+  a span:nth-child(2)
+ {
+ 	top: -100%;
+ 	right: 0;
+ 	width:2px;
+ 	height:100%;
+ 	background:linear-gradient(180deg,transparent,var(--ab));
+ }
+ a:hover span:nth-child(2)
+ { 
+ 	top:100%;
+ 	transition: 1s;
+ 	transition-delay: 0.25s;
+
+ }
+ a span:nth-child(4)
+ {
+ 	bottom: -100%;
+ 	left: 0;
+ 	width:2px;
+ 	height:100%;
+ 	background:linear-gradient(360deg,transparent,var(--ab));
+ }
+ a:hover span:nth-child(4)
+ { 
+ 	bottom:100%;
+ 	transition: 1s;
+ 	transition-delay: 0.25s;
+
+ }
+
+
+/*-----------------------------------main-------------------------------------------*/
+ main .site-title{
+     background-image: url('../assests/g.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     opacity: 1;
+     height:100vh;
+     display:flex;
+     justify-content: flex-end;
+ }
+
+
+ main .site-title .site-background p{
+     font-family: var(--dance); !impotant;
+     font-size: 2rem; !important;
+     justify-content:flex-start;
+     
+ }
+ main .site-title .site-background
+ {
+     padding-top: 8rem;
+     text-align: center;
+     color:black;
+ }
+ main .site-title h1,h4{
+     margin:.2rem;
+     padding:.007rem;
+ }
+ main .site-title .btn{
+     margin:2rem;
+     background: #F4ACB7;
+ }
+ main .site-title .btn:hover{
+    background: transparent;
+    color:white;
+    border:1px solid white;
+ }
+
+
+
+
+
+ main .blog{
+     background-color: white;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100vh;
+     width: 100%;
+     background-size: 30%;
+
+ }
+ main .blog .blog-post{
+     padding-top: 3em;
+     padding-bottom: 3em;
+ }
+ main .blog-post .blog-content{
+     display: flex;
+     flex-direction: column;
+     text-align:center;
+     width: 80%;
+     margin: 3rem 2rem;
+     box-shadow: 0 15px 20px gray;
+
+ }
+
+ main .blog-content .blog-title{
+     padding: 2rem 0;
+ }
+ main .blog-content .blog-btn{
+     padding: .7rem 1rem;
+     background:skyblue;
+     margin:.5rem;
+ }
+ main .blog-content span{
+     display: block;
+ }
+ /*---------------------------------content------------------------------*/
+ 
+ 
+     
+    main .post-content h3{
+        
+        text-align: center;
+       padding: 1.5rem;
+       font-size: 2rem;
+        
+    }
+   
+       
+    
+ main .site-content .post-content >.post-image ,.post-title{
+     padding: 0rem 2rem;
+     position:relative;
+     
+ }
+ 
+ main .site-content .post-content >.post-image > div{
+     overflow: hidden;
+     
+ }
+ main .site-content .post-content > .post-image .img{
+    
+     transition:all 1s ease;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+ 
+     
+ }
+ main .site-content .post-content >.post-image .img:hover{
+     transform: scale(1.3);
+     
+ }
+ main .post-content .post-title
+ {  padding:1rem;
+     text-align:center;
+ }
+ main .post-content .post-title p{
+     
+     color: rgb(184, 53, 53);
+     margin:  1rem 5rem;
+     text-align:justify;
+     
+ }
+ main .post-content .post-title a{
+ color: rgb(184, 53, 53);
+ font-family: var(--lemon);
+ font-size: 1rem;
+ 
+ }
+ .site-content .post-content .post-title .post-btn{
+     border-radius: 2rem;
+     padding: 1rem 1rem;
+     background: #f68084;
+ }
+ .site-content .pagenation{
+     justify-content: center;
+     margin:4rem 5rem;
+ }
+ .site-content .pagenation a{
+     padding: .2rem;
+     border-radius: 2rem;
+     margin:0.3rem;
+     font-family: lemonada;
+     color:black;
+ }
+ .site-content .pagenation .pages{
+     background-color: #f68084;
+     color:black;
+ }
+/*--------------------------boxed-----------------------*/
+.box{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color:#fdedc9;
+    padding:1rem 1rem;
+    margin: 2rem 6rem;
+    
+}
+
+
+
+
+
+
+
+ /*-------------------------------footer----------------------*/
+
+ footer.footer{
+height: 100%;
+background-color:black;
+position: relative;
+ }
+ footer.footer .container{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+
+ }
+ footer.footer .container > div{
+     flex-grow: 1;
+     flex-basis: 0;
+     padding:.1rem .1rem;
+     
+ }
+ footer.footer .container h4{
+     color:whitesmoke;
+ }
+ footer.footer .container .newsletter .form-element{
+     background-color: black;
+     display: inline;
+
+ }
+ footer.footer  .newsletter .form-element input{
+padding: .5rem .7rem;
+border: none;
+background: transparent;
+color: black;
+width: 75%;
+
+ }
+
+ footer.footer  .newsletter .form-element span{
+     background-color: #a6c0fe;
+     padding: .5rem .7rem;
+     cursor: pointer;
+
+ }
+ footer.footer .instagram div > img{
+display: inline-block;
+width: 25%;
+height: 50%;
+margin: .3rem .4rem;
+ }
+ 
+ footer.footer .copywrite {
+     justify-content: center;
+    
+     font-family: fantasy;
+ }
+ footer.footer .copywrite h4{
+     color:palevioletred; 
+ }
+ footer.footer .move{
+     position:absolute;
+     right:6% ;
+     top: 50%;
+ }
+ footer.footer .move span{
+     color: peachpuff;
+ }
+ footer.footer .move span:hover{
+     color: peru;
+     cursor: pointer;
+ }
+
+
+ .text{
+    color:black;
+    text-align:center;
+    min-height: 100px;
+    min-width: 100%;
+    padding-top: 50px;
+    font-family:dancing;
+    font-size:50px;
+}
+
+
+.contain{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.box {
+    background:#ffffe6 ;
+}
+.box1 {
+    background: #ffe6e6;
+}
+
+
+
+.content{
+    font-family:dancing;
+    font-size:1.5em;
+    padding-left: 20px;
+}
+
+@media (max-width: 736px){
+.box1,.box{
+   
+    padding: 20px 40px 40px;
+    max-width: 100%;
+    display:inline-block;
+
+    &__image 
+       
+          {
+            vertical-align: top;
+            width:45%;
+            display:inline-block;
+        }
+    
+    &__text {
+            width: 70%;
+        }
+    }
+
+        .box:hover,.box1:hover
+{
+    
+    border: 0.5px solid black;
+
+}
+
+.fa-angle-up{
+    display:none;
+}
+.slidershow{
+  width: 80%;
+  height: 75%;
+  overflow: hidden;
+  padding-top: 4.5rem;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+
+
+
+ main .site-title{
+     background-image: url('../assests/g.jpg');
+     background-size: 100% 60%;
+     background-repeat: no-repeat;
+     opacity: 1;
+     height:100vh;
+     display:flex;
+     justify-content: flex-end;
+ }
+
+  main .site-title .site-background p{
+    padding-top:1px;
+     font-family: var(--dance); !impotant;
+     font-size: 2rem; !important;
+     justify-content:center;
+     
+ }
+
+ main .site-title h1,h4{
+     margin:.2rem;
+     padding:.007rem;
+    padding-top:20rem;
+    font-family: var(--dance);
+    font-size: 4.0rem;
+
+}
+ .classn .nav-menu, .nav-items{
+        flex-direction: column;
+    }
+    .classn .toggle-collapse{
+        display: initial;
+    }
+
+}
+@media (min-width: 737px){
+.box,.box1{
+    
+    padding: 20px 40px 40px;
+    max-width: 100%;
+    display:flex;
+
+
+    &__image 
+       
+          {
+            vertical-align: top;
+            width:45%;
+            display:inline-block;
+        }
+    
+    &__text {
+        text-align:center;
+        
+        padding-left: 20px;
+            width: 70%;
+        }
+    }
+
+    .box:hover,.box1:hover
+{
+    zoom:130%;
+    border: 2px solid black;
+
+}
+slidershow{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  display:none;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+}
+

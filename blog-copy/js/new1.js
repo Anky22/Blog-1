@@ -1,0 +1,13 @@
+setTimeout(function(){
+    $("#test").hide(2000);
+    $("#test2").show(1000);
+    $("#test3").show();
+    $("#test4").show();
+    $("#test5").show();
+    $("#mb").show();
+    $('#tc1').click(function(){
+         $('#mb').toggleClass('collapse');
+         $("#test2").hide(1000);
+    });
+   switchVisible();
+},2000);
